@@ -28,3 +28,15 @@ CREATE TABLE employee (
     FOREIGN KEY (role_id) REFERENCES role(id),
     FOREIGN KEY (manager_id) REFERENCES employee(id)
 );
+
+INSERT INTO department(`name`)
+VALUES ("Engineering");
+
+INSERT INTO department(`name`)
+VALUES ("HR");
+
+INSERT INTO role(`title`,`salary`,`department_id`)
+VALUES ("Nerd", 300, 1);
+
+INSERT INTO employee(`first_name`,`last_name`,`role_id`)
+VALUES ("Stacy", "McJenkins", 1);
